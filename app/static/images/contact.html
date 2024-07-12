@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link css-->
+    <link rel="stylesheet" href="styleabout.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9324/9324616.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="top-row">
+                <a href="#" class="logo">florista</a>
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="#">Sections</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <lord-icon src="https://cdn.lordicon.com/mfmkufkr.json" trigger="hover" style="width:35px;height:35px"></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/xyboiuok.json" trigger="hover" style="width:35px;height:35px"></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/kkvxgpti.json" trigger="hover" style="width:35px;height:35px" id="search-icon"></lord-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cll">
+            <div class="container2">
+                <h1>Contact </h1>
+                <div class="line"></div> <!-- السطر تحت العنوان -->
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="content">
+                <div class="text1">
+                    <div class="tx1">Call or message us with your questions</div>
+                    <div class="tx2">Phone: 0123 456 7890 <br>
+                        Email: florista@gmail.com <br>
+                        Address: Arasat Street, Karada, Baghdad, Iraq</div>
+                    <div class="tx3">Note: Open all week days from 10am - 8pm</div>
+                </div>
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="contact.jpeg" alt="Front Image">
+                        </div>
+                        <div class="back">
+                            <img src="https://caughtinsouthie.com/wp-content/uploads/2022/11/small-business-female-florist-in-flower-shop-2022-08-01-18-37-54-utc.jpg" alt="Back Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Our shop address <br> Arasat St. Karada, Baghdad, Iraq</p>
+        </div>
+        <div class="footer-right">
+            <div>
+                <img src="feacbook.png" alt="Facebook">
+                <img src="instagram.png" alt="Instagram">
+                <img src="snapchat.png" alt="Snapchat">
+            </div>
+            <div class="email">
+                <img src="gmail.png" alt="Gmail">
+                <span>florista@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchIcon = document.getElementById('search-icon');
+            searchIcon.addEventListener('click', () => {
+                const searchBarContainer = document.getElementById('search-bar-container');
+                if (searchBarContainer) {
+                    searchBarContainer.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

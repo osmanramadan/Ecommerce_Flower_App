@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cambria", Times, serif;
+}
+input:focus {
+    background-color : #FFEBD8;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} 
+av ul li {
+    display: inline-block; /* التأكد من عرض العناصر في صف واحد */
+    padding: 15px 20px; /* إضافة بعض التباعد داخل العناصر */
+    transition: border 0.3s ease; /* انتقال سلس للحدود */
+  }
+  
+
+  .logo{
+    text-decoration: none;
+    color:#333;
+    font-family: Caveat Brush;
+    font-size: 45px;
+    font-weight: 70;
+    line-height: 70px;
+    text-align: justified;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+    font-size: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+nav ul li a:hover {
+    background-color: #eeeeeeb4;
+    border-radius: 12px;
+    box-shadow: 0 5px 7px rgba(209, 206, 206, 0.767);
+    border-bottom: 3px solid pink; /* إضافة حدود وردية عند تحريك المؤشر */
+
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+main {
+    flex: 1;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #FBA1B7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left p {
+    color: white;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.footer-right .email {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-right .email img {
+    margin-right: 10px;
+}
+
+.footer-right .email span {
+    color: white;
+}
+
+
+
+
+.containers {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 20px;
+    height: 150px;
+    margin-left: 450px;
+}
+.containerss {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 20px;
+    height: 150px;
+    margin-left: 450px;
+}
+
+.containers img  {
+    width: 100px;
+   height: 146px;
+    float: left;
+    border-radius: 8px;
+}
+.containerss img  {
+    width: 100px;
+   height: 146px;
+    float: left;
+    border-radius: 8px;
+}
+.details {
+    flex: 1;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.price span {
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.quantity input {
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 15px;
+    
+}
+      
+ h1 {
+    text-align: center;
+    color: #222222;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 40px;
+}
+
+ h1::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: pink;
+    margin: 10px auto 0;
+}
+/* CSS */
+.pay {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.pay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.summary-item, .summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.summary-total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.basket-container {
+            position: relative;
+            display: inline-block;
+}
+.basket-badge {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color:rgb(180, 141, 147);
+}

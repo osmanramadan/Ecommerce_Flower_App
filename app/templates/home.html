@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "../static/css/home.css">
+ 
+    
+    <title>Florista</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-row">
+                <a href="/" class="logo">florista</a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/sections">Sections</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/login" style="color:red">sign</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a onclick="goToBasket()"class="basket-container">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/mfmkufkr.json"
+                            trigger="hover"
+                            style="width:35px;height:35px">
+                        </lord-icon>
+                         <div class="cart-icon basket-badge" onclick="goToBasket()">
+                           
+                            <div class="cart-count" id="cartCount">0</div>
+                        </div>
+                    </a>
+                    
+           <a href="/favourite">
+            <lord-icon
+            src="https://cdn.lordicon.com/xyboiuok.json"
+            trigger="hover"
+            style="width:35px;height: 35px" >
+        </lord-icon>
+           </a>
+
+           <a href="/search">
+            <lord-icon
+             src="https://cdn.lordicon.com/kkvxgpti.json"
+              trigger="hover"
+              style="width:35px;height:35px" id="search-icon">
+           </lord-icon>
+           </a>
+
+           
+     
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Main content here -->
+        <!-- الشرائح -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://asset.bloomnation.com/f_auto,q_auto/v1/vendor/7637/banner/1572979509_file_9fdf250f4b.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('https://asset.bloomnation.com/f_auto,q_auto/v1/vendor/7637/banner/1572979509_file_9fdf250f4b.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('https://asset.bloomnation.com/f_auto,q_auto/v1/vendor/7637/banner/1572979509_file_9fdf250f4b.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('https://asset.bloomnation.com/f_auto,q_auto/v1/vendor/7637/banner/1572979509_file_9fdf250f4b.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('https://www.everybloomingthingfermoy.ie/upload/mt/ebtf35/upload/files/images/panels/23-spring-flowers.jpg')"></div>
+                <!-- إضافة المزيد من الصور هنا -->
+            </div>
+            <!-- البيجنيشن -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    
+    <div class="c">
+        <div class="a">
+            <h1>Flowers for every mood</h1>
+            <p>From classic roses to exotic blooms, find in our shop the perfect expression of love. <br>
+    
+    
+    
+    
+    
+    
+               <br> We provide fresh flowers daily. discover the available types and select what you desire</p>
+        </div>
+        <div class="b">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://i.pinimg.com/736x/2e/94/52/2e9452ed74964c5b926467b1225a8cfb.jpg" alt="Image 1">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Quality and Variety of Flowers</h3>
+                        <p>The shop should offer high-quality, fresh flowers with a wide range of options to suit all tastes and occasions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../static/images/20230205161216_69ac6.jpeg" alt="Image 2">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Excellent Customer Service</h3>
+                        <p>It is essential for the shop to have a friendly and professional staff who can provide helpful advice and assist customers in choosing the right flowers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://i.pinimg.com/736x/a5/5d/a6/a55da6de644b6c1a06706ed36660771e.jpg" alt="Image 3">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Reliable and Fast Delivery</h3>
+                        <p>An efficient and reliable delivery service that ensures flowers arrive in excellent condition and on time enhances customer satisfaction and contributes to the shop's success.                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+<div class="rose-container">
+    <button class="rose-arrow left" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="rose-slides" id="rose-slides">
+        <div class="rose-slide">
+            <img src="https://i.pinimg.com/736x/48/fb/9b/48fb9bb9e6b1fc2dcf397982171377c1.jpg" alt="She Is The Moment">
+            <div class="rose-caption">Birthday for person you love</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://i.pinimg.com/736x/22/8b/36/228b36d1f2c963d4a6d466338913aeaf.jpg" alt="Dream Come True">
+            <div class="rose-caption">Mother's Day</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://th.bing.com/th/id/OIP.JgogYma_LtdctrWdOaZPCQAAAA?w=474&h=474&rs=1&pid=ImgDetMain" alt="It Girl">
+            <div class="rose-caption">Valentine's Day</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://images.squarespace-cdn.com/content/v1/560990ade4b0598d7ecf19c2/1611492863188-ES54EUB3IKUIZEJ3T3IV/Ceremony+(79+of+84).jpg?format=500w" alt="Flower 5">
+            <div class="rose-caption">The Wedding</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://yourdayflora.com/wp-content/uploads/2023/05/Angela01.jpg" alt="Sunflowers">
+            <div class="rose-caption">Happy Occasion</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://i.pinimg.com/736x/83/87/57/838757d03892ae3f6add3164acbae7f1.jpg" alt="Flower 6">
+            <div class="rose-caption">Summer</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://th.bing.com/th/id/OIP.AB5jl0jRSy0ER5-jeuT-zAHaHZ?rs=1&pid=ImgDetMain" alt="Flower 7">
+            <div class="rose-caption">Flower White</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://th.bing.com/th/id/OIP.EuxT1Q2BVumL5Csd5trEfQHaI_?w=720&h=874&rs=1&pid=ImgDetMain" alt="Flower 8">
+            <div class="rose-caption">Flowers for everyone</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://media.urbanstems.com/image/upload/f_auto/v1683124718/Blog/RBCBlogStep3_ehnhd3.jpg" alt="Flower 9">
+            <div class="rose-caption">Flowers and Books</div>
+        </div>
+        <div class="rose-slide">
+            <img src="https://th.bing.com/th/id/OIP.S4nxpZXXa15vW5EDu2-DugHaHa?w=800&h=800&rs=1&pid=ImgDetMain" alt="Flower 10">
+            <div class="rose-caption">Graduations</div>
+        </div>
+    </div>
+    <button class="rose-arrow right" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+
+
+<center> <div class="cll">
+    <div class="container2">
+        <h1>Collections</h1>
+        <div class="collections">
+            <div class="item">
+                <img src="../static/images/gardenia.white.jpeg" alt="White gardenia bouquet">
+                <h2>White gardenia bouquet</h2>
+                <p>15.000 IQD</p>
+                <a onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)">
+                <lord-icon
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> 
+                </lord-icon>
+                </a>
+                <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))">
+                         <lord-icon
+                         src="https://cdn.lordicon.com/xyboiuok.json"
+                         trigger="hover"
+                         style="width:35px;height: 35px;"
+                         class="heart"
+                     >
+                 <!-- <div class="">
+                    <i  style="background-color:#000;width:10px;height:35px;" class="bi bi-heart heart"></i>
+                 </div>   -->
+</a>
+
+   </lord-icon> 
+            </div>
+            <div class="item">
+                <img src="../static/images/lilac.violet.jpeg" alt="Violet lilac bouquet">
+                <h2>Violet lilac bouquet</h2>
+                <p>25.000 IQD</p>
+                <lord-icon
+                onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> 
+                </lord-icon>
+                <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> 
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xyboiuok.json"
+                        trigger="hover"
+                        style="width:35px;height: 35px" class="heart">
+                    </lord-icon>
+                </a>
+            </div>
+            <div class="item">
+                <img src="../static/images/daisy.white.jpeg" alt="White daisy bouquet">
+                <h2>White daisy bouquet</h2>
+                <p>25.000 IQD</p>
+                <lord-icon
+                onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> 
+                </lord-icon>
+                <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> 
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xyboiuok.json"
+                        trigger="hover"
+                        style="width:35px;height: 35px" class="heart">
+                    </lord-icon>
+                </a>
+            </div>
+            <div class="item">
+                <img src="../static/images/sun flower.jpeg" alt="Sun flower bouquet">
+                <h2>Sun flower bouquet</h2>
+                <p>25.000 IQD</p>
+                <lord-icon
+                onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> 
+                </lord-icon>
+                <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> 
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xyboiuok.json"
+                        trigger="hover"
+                        style="width:35px;height: 35px" class="heart">
+                    </lord-icon>
+                </a>
+            </div>
+            <div class="item">
+                <img src="../static/images/tulip.blue.jpeg" alt="Blue tulip bouquet">
+                <h2>Blue tulip bouquet</h2>
+                <p>25.000 IQD</p>
+                <lord-icon
+                onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> 
+                </lord-icon>
+                <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> 
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xyboiuok.json"
+                        trigger="hover"
+                        style="width:35px;height: 35px" class="heart">
+                    </lord-icon>
+                </a>
+            </div>
+            <div class="item">
+                <img src="../static/images/gypsophila.white.jpeg" alt="White gypsophila bouquet">
+                <h2>White gypsophila bouquet</h2>
+                <p>15.000 IQD</p>
+                <lord-icon
+                onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> 
+                </lord-icon>
+                <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> 
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xyboiuok.json"
+                        trigger="hover"
+                        style="width:35px;height: 35px" class="heart">
+                    </lord-icon>
+                </a>
+            </div>
+            <div class="item">
+                <img src="../static/images/peony.pink.jpeg" alt="Pink peony bouquet">
+                <h2>Pink peony bouquet</h2>
+                <p>35.000 IQD</p>
+                <lord-icon
+                onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> 
+                </lord-icon>
+                <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> 
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xyboiuok.json"
+                        trigger="hover"
+                        style="width:35px;height: 35px" class="heart">
+                    </lord-icon>
+                </a>
+            </div>
+            
+ 
+        </div>
+        <div class="container4">
+            <a href="/col1" class="button-view-all">View all</a>
+        </div>
+    </div>
+</div></center>
+
+  <footer>
+    <div class="footer-left">
+        <p>Our shop address <br> Arasat St. Karada, Baghdad, Iraq</p>
+    </div>
+    <div class="footer-right">
+        <div>
+            <img src="../static/images/feacbook.png" alt="Facebook">
+            <img src="../static/images/instagram.png" alt="Instagram">
+            <img src="../static/images/snapchat.png" alt="Snapchat">
+        </div>
+        <div class="email">
+            <img src="../static/images/gmail.png" alt="Gmail">
+            <span>florista@gmail.com</span>
+        </div>
+    </div>
+</footer>
+    <script src="../static/js/home.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+
+</body>
+</html>

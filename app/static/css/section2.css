@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cambria", Times, serif;
+}
+input:focus {
+    background-color : #FFEBD8;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} 
+av ul li {
+    display: inline-block; /* التأكد من عرض العناصر في صف واحد */
+    padding: 15px 20px; /* إضافة بعض التباعد داخل العناصر */
+    transition: border 0.3s ease; /* انتقال سلس للحدود */
+  }
+  
+
+  .logo{
+    text-decoration: none;
+    color:#333;
+    font-family: Caveat Brush;
+    font-size: 45px;
+    font-weight: 70;
+    line-height: 70px;
+    text-align: justified;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+    font-size: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+nav ul li a:hover {
+    background-color: #eeeeeeb4;
+    border-radius: 12px;
+    box-shadow: 0 5px 7px rgba(209, 206, 206, 0.767);
+    border-bottom: 3px solid pink; /* إضافة حدود وردية عند تحريك المؤشر */
+
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+main {
+    flex: 1;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #FBA1B7;
+    padding: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left p {
+    color: white;
+    margin-left: 40px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 28px;
+    margin-right: 30px;
+}
+
+.footer-right .email {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+
+.footer-right .email img {
+    margin-right: 9px;
+    width: 29px;
+    height: 23px;
+}
+
+.footer-right .email span {
+    color: white;
+    margin-right: 40px;
+}
+
+
+
+.cll {
+            
+ background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+ text-align: center;
+ margin-right: 30px;
+  margin-top: 100px;
+ 
+}
+        
+      
+.container2 {
+    max-width: 1200px;
+    margin-top: 40px;
+    text-align: center; /* To center the text within the container */
+    
+}
+
+.container2 h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 900px;
+  display: inline-block; /* يجعل الحدود تمتد فقط على طول النص وليس عرض الصفحة بأكمله */
+}
+.bott{
+  float: right;
+  margin-left: 100px;
+}
+.btn {
+padding-top: 50px;
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.267); 
+}
+
+.btn:hover {
+  transform: scale(1.1); /* تكبير الزر عند وضع المؤشر */
+}
+
+.active {
+  background-color: #FBA1B7; /* لون الزر النشط */
+  color: #000;
+}
+* نمط الزر الأساسي */
+.btn {
+  background-color: #f8f6f7; /* لون خلفية الزر */
+  color: #ffffff; /* لون النص */
+  border: none;
+  padding: 15px 30px; /* حشوة داخلية */
+  font-size: 16px;
+  border-radius: 25px; /* حواف دائرية */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  text-decoration: none; /* إزالة التسطير للنص داخل الزر */
+  display: inline-block;
+}
+
+/* التأثير عند التمرير فوق الزر */
+.btn:hover {
+  background-color: #FBA1B7; /* لون الخلفية عند التمرير */
+  transform: scale(1.05); /* تكبير الزر قليلاً */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل للزر */
+}
+
+/* نمط الرابط داخل الزر */
+.btn a {
+  color: inherit; /* يجعل لون النص هو نفسه لون النص للزر */
+  text-decoration: none; /* إزالة التسطير للنص داخل الزر */
+}
+
+/* عند تفعيل الزر */
+.btn.active {
+  background-color: #FBA1B7 /* لون الخلفية للزر النشط */
+}
+
+/* التأثير عند الضغط على الزر */
+.btn:active {
+  background-color: #ff79d2; /* تغيير لون الخلفية عند الضغط */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+  transform: scale(0.98); /* تقليل حجم الزر قليلاً */
+}
+
+.inactive {
+  background-color: #F8F6EC; /* لون الزر الغير نشط */
+}
+
+.line {
+  width: 104%;
+  height: 5px; /* يمكن تعديل الارتفاع حسب الرغبة */
+  background-color: pink;
+  margin: 0 auto; /* يجعل السطر في المنتصف تحت العنوان */
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+
+       .collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.item .car{
+    width: 20px;
+    height: 20px;
+   
+}
+.item .heart{
+    width: 20px;
+    height: 20px;
+   
+}
+        
+        .item {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+            overflow: hidden;
+            width: calc(25% - 20px); /* 4 items per row */
+            box-sizing: border-box;
+            transition: transform 0.2s;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .item:hover {
+            transform: scale(1.05);
+            background-color: #fdeaee;
+        }
+        
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .item h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        .item p {
+            font-size: 16px;
+            color: #777;
+            margin: 5px 0 15px;
+
+        }
+        
+        .view-all {
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.267); /* يضيف ظل باللون الأسود بشكل ناعم */
+        }
+        
+        .view-all:hover {
+            background-color:#fdeaee;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 1024px) {
+            .item {
+                width: calc(33.33% - 20px); /* 3 items per row */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .item {
+                width: calc(50% - 20px); /* 2 items per row */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .item {
+                width: 100%; /* 1 item per row */
+            }
+        }
+
+        .scroll {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 50px;
+          padding: 20px;
+          border-radius: 20px; /* زوايا مستديرة للصندوق */
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف للصندوق */
+        }
+        
+        .scroll i {
+          margin: 0 10px; /* زيادة المسافة بين الأيقونات */
+          cursor: pointer;
+          font-size: 24px; /* تكبير حجم الأيقونات */
+          color: #020202; /* تغيير لون الأيقونات */
+          transition: transform 0.3s, color 0.3s; /* إضافة تأثير الانتقال */
+        }
+        
+        .scroll i:hover {
+          transform: scale(1.2); /* تكبير الأيقونات عند التمرير */
+          color: #FBA1B7; /* تغيير لون الأيقونات عند التمرير */
+        }
+        
+        .scroll a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 20px; /* زيادة الحشو لتوسيع الزر */
+          background-color: #ffffff;
+          color: #333; /* لون نص أكثر نعومة */
+          border: none;
+          border-radius: 25px; /* زوايا مستديرة أكثر للزر */
+          cursor: pointer;
+          font-size: 18px;
+          transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* إضافة تأثير الانتقال */
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.349); /* ظل أكبر للزر */
+        }
+        
+        .scroll a:hover {
+          transform: scale(1.1); /* تكبير الزر عند التمرير */
+          background-color: #FBA1B7;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* زيادة ظل الزر عند التمرير */
+        }
+        
+
+        .image-container {
+          display: flex;
+          flex-wrap: wrap; /* يسمح بتغليف الصور على عدة أسطر */
+          justify-content: center; /* مركز الصور في الحاوية */
+          margin: 50px 0; /* إضافة بعض المساحة العلوية والسفلية */
+        }
+        
+        .image-box {
+          position: relative; /* لضمان أن النص يمكن وضعه فوق الصورة */
+          perspective: 1000px; /* يضيف تأثير العمق للعنصر */
+          margin: 20px;
+          text-align: center;
+        }
+        
+        .image-box img {
+          width: 105px;
+          height: 105px;
+          border-radius: 20px;
+          transition: transform 0.6s;
+          transform-style: preserve-3d; /* يحافظ على تأثير الثلاثي الأبعاد */
+        }
+        .basket-container {
+            position: relative;
+            display: inline-block;
+}
+.basket-badge {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        
+        .image-box:hover img {
+          transform: rotateY(180deg); /* دوران الصورة عند التمرير */
+          background-color: #fcd2dc;
+        }
+        
+        .image-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotateY(180deg); /* يضع النص في المركز ويدوره */
+          font-size: 20px;
+          color: #333;
+          backface-visibility: hidden; /* يخفي النص عندما يكون الوجه الأمامي مرئي */
+          transition: transform 0.6s; /* نفس مدة انتقال الصورة لضمان تزامن الحركة */
+        }
+        
+        .image-box:hover .image-text {
+          transform: translate(-50%, -50%) rotateY(0deg); /* يعيد النص إلى وضعه الطبيعي عند التمرير */
+        }
+        
+        /* إضافة التأثير العكسي للصور */
+        .image-box img {
+          backface-visibility: hidden; /* يخفي الواجهة الخلفية عند التدوير */
+          position: relative;
+        }
+        
+        .image-box::after {
+          content: attr(alt); /* يستخدم النص البديل للصورة */
+          display: block;
+          width: 105px;
+          height: 105px;
+          background-color: #ffe6f2; /* لون الخلفية الوردي الفاتح */
+          border-radius: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+          text-align: center;
+          line-height: 105px;
+          color: #333;
+          transition: transform 0.6s; 
+        }
+        

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesearch.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9324/9324616.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Search</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-row">
+                <a href="#" class="logo">florista</a>
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="#">Sections</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <lord-icon src="https://cdn.lordicon.com/mfmkufkr.json" trigger="hover" style="width:35px;height:35px"></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/xyboiuok.json" trigger="hover" style="width:35px;height:35px"></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/kkvxgpti.json" trigger="hover" style="width:35px;height:35px" id="search-icon"></lord-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1>Search History</h1>
+    <div class="line"></div> <!-- السطر تحت العنوان -->
+</div>
+    <div id="overlay" class="overlay"></div>
+
+    <section id="search-section">
+        <div class="search-container">
+            <input type="text" name="text" placeholder="Search">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <p>Our shop address <br> Arasat St. Karada, Baghdad, Iraq</p>
+        </div>
+        <div class="footer-right">
+            <div class="social-icons">
+                <img src="feacbook.png" alt="Facebook">
+                <img src="instagram.png" alt="Instagram">
+                <img src="snapchat.png" alt="Snapchat">
+            </div>
+            <div class="email">
+                <img src="gmail.png" alt="Gmail">
+                <span>florista@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchIcon = document.getElementById('search-icon');
+            const searchSection = document.getElementById('search-section');
+            const overlay = document.getElementById('overlay');
+
+            searchIcon.addEventListener('click', () => {
+                searchSection.classList.toggle('active');
+                overlay.classList.toggle('active');
+            });
+
+            overlay.addEventListener('click', () => {
+                searchSection.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cambria", Times, serif;
+}
+input:focus {
+    background-color : #FFEBD8;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} 
+av ul li {
+    display: inline-block; /* التأكد من عرض العناصر في صف واحد */
+    padding: 15px 20px; /* إضافة بعض التباعد داخل العناصر */
+    transition: border 0.3s ease; /* انتقال سلس للحدود */
+  }
+  
+
+  .logo{
+    text-decoration: none;
+    color:#333;
+    font-family: Caveat Brush;
+    font-size: 45px;
+    font-weight: 70;
+    line-height: 70px;
+    text-align: justified;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+    font-size: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+nav ul li a:hover {
+    background-color: #eeeeeeb4;
+    border-radius: 12px;
+    box-shadow: 0 5px 7px rgba(209, 206, 206, 0.767);
+    border-bottom: 3px solid pink; /* إضافة حدود وردية عند تحريك المؤشر */
+
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+main {
+    flex: 1;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #FBA1B7;
+    padding: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left p {
+    color: white;
+    margin-left: 40px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 28px;
+    margin-right: 30px;
+}
+
+.footer-right .email {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+
+.footer-right .email img {
+    margin-right: 9px;
+    width: 29px;
+    height: 23px;
+}
+
+.footer-right .email span {
+    color: white;
+    margin-right: 40px;
+}
+
+/* إعدادات الشرائح */
+.swiper-container {
+    width: 100%;
+    height: 500px; /* ارتفاع الشرائح */
+    border-radius: 10px; /* حواف مستديرة */
+    overflow: hidden; /* إخفاء الزوايا الزائدة */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* ظل للشرائح */
+   
+    }
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* حواف مستديرة */
+    overflow: hidden; /* إخفاء الزوايا الزائدة */
+}
+
+/* إعدادات البيجنيشن */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 55px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.5;
+    border-radius: 50%; /* حواف مستديرة */
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+
+
+.cll {
+            
+ background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+ text-align: center;
+  padding-left: 0px;
+ 
+}
+        
+      
+.container2 {
+    max-width: 1200px;
+    margin-top: 40px;
+    text-align: center; /* To center the text within the container */
+    
+}
+
+.container2 h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading text */
+    border-bottom: pink 4px solid ;
+    display: inline-block; /* يجعل الحدود تمتد فقط على طول النص وليس عرض الصفحة بأكمله */
+  }
+
+
+       .collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.item .car{
+    width: 20px;
+    height: 20px;
+   
+}
+.item .heart{
+    width: 20px;
+    height: 20px;
+   
+}
+        
+        .item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(25% - 20px); /* 4 items per row */
+            box-sizing: border-box;
+            transition: transform 0.2s;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .item:hover {
+            transform: scale(1.05);
+            background-color: #fdeaee;
+        }
+        
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .item h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        .item p {
+            font-size: 16px;
+            color: #777;
+            margin: 5px 0 15px;
+
+        }
+        
+        .container4 {
+         margin-bottom: 20px;
+        }
+
+        .button-view-all {
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.267); /* يضيف ظل باللون الأسود بشكل ناعم */
+            text-decoration: none; /* إزالة الخط السفلي للنص */
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .button-view-all:hover {
+            background-color: #fdeaee;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 1024px) {
+            .item {
+                width: calc(33.33% - 20px); /* 3 items per row */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .item {
+                width: calc(50% - 20px); /* 2 items per row */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .item {
+                width: 100%; /* 1 item per row */
+            }
+        }
+
+        .c {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 400px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .a {
+            flex: 1;
+            padding: 20px;
+            margin-bottom: 100px;
+        }
+        
+        .a h1 {
+            text-align: center;
+            border-top: #FBA1B7 5px solid;
+            border-bottom: #FBA1B7 5px solid;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 26px;
+        }
+        
+        .a p {
+            text-align: left;
+            font-size: 18px;
+        }
+        
+        .b {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+        
+        .flip-card-front {
+            background-color: #fff;
+            color: black;
+        }
+        
+        
+        .large-card {
+            width: 200px;
+            height: 200px;
+        }
+        
+        /* تكبير صورة رقم 4 */
+        .flip-card:nth-child(8) .flip-card-inner {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .flip-card:nth-child(8) .flip-card-front,
+        .flip-card:nth-child(8) .flip-card-back {
+            width: 200px;
+            height: 200px;
+        }
+/* تحديد حجم الصور */
+.flip-card img {
+    width:250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover; /* لتغطية الصورة دون تشويه */
+}
+
+/* تحديد حجم البطاقات */
+.flip-card {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    margin: 10px;
+    display: inline-block; /* ليكون العرض تلقائيًا ومتناسقًا */
+}
+
+/* تحديد حجم الصورة الكبيرة */
+.large-card {
+    width: 400px;
+    height: 400px;
+}
+
+/* تأثير التحويل */
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 10px; /* إضافة حواف منحنية */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل لتأثير ثلاثي الأبعاد */
+}
+
+/* تعديل التأثير عند التحويل */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* تحديد الجزء الأمامي والخلفي من البطاقة */
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* تحديد التأثيرات الخاصة بالجزء الأمامي */
+.flip-card-front {
+    background-color: #fce4ec; /* لون خلفية وردي فاتح */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* إضافة حواف منحنية */
+}
+
+/* تحديد التأثيرات الخاصة بالجزء الخلفي */
+.flip-card-back {
+    background-color:#fcc3d1; /* لون خلفية زاهية */
+    color: rgb(252, 249, 249);
+    transform: rotateY(180deg);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px; /* إضافة حواف منحنية */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* تنسيق العنوان */
+.flip-card-back h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* تنسيق النص */
+.flip-card-back p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+/* Collections section */
+.collections-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.container2 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.rose-container {
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    margin-left: 82px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.rose-slides {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+.rose-slide {
+    flex: 1;
+    min-width: calc(100% / 4 - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.rose-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.rose-slide:hover {
+    background-color: #fce4ec; /* Light pink background */
+}
+.rose-slide img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.rose-caption {
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.rose-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+.rose-arrow.left {
+    left: 10px;
+}
+.rose-arrow.right {
+    right: 10px;
+}
+@media (max-width: 800px) {
+    .rose-slide {
+        min-width: calc(100% / 2 - 20px);
+    }
+}
+@media (max-width: 600px) {
+    .rose-slide {
+        min-width: 100%;
+    }
+    .rose-arrow {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link css-->
+    <link rel="stylesheet" href="../static/css/col1.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9324/9324616.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>collections</title>
+
+</head>
+
+<body>
+    
+  <header>
+    <div class="container">
+        <div class="top-row">
+            <a href="/" class="logo">florista</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/sections">Sections</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+               
+                <a onclick="goToBasket()" class="basket-container">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/mfmkufkr.json"
+                        trigger="hover"
+                        style="width:35px;height:35px">
+                    </lord-icon>
+                     <div class="cart-icon basket-badge" onclick="goToBasket()">
+                       
+                        <div class="cart-count" id="cartCount">0</div>
+                    </div>
+                </a>
+                <a href="/favourite">
+       <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" >
+       </lord-icon>
+                </a>
+                <a href="/search">
+                    
+       <lord-icon
+         src="https://cdn.lordicon.com/kkvxgpti.json"
+          trigger="hover"
+          style="width:35px;height:35px" id="search-icon">
+       </lord-icon>
+                </a>
+ 
+            </div>
+        </div>
+    </div>
+</header>
+   <center> <div class="cll">
+    <div class="container2">
+      <div class="bott">
+        <button id="a-z" class="btn inactive">A - Z</button>
+        <button id="default" class="btn active">Default</button>
+    
+      </div>
+        <h1>Collections</h1>
+       
+       
+        <div class="line"></div> <!-- هذا هو السطر الذي نريد إضافته -->
+</div>
+        <div class="collections">
+            <div class="item">
+                <img src="../static/images/rose.red.jpeg" alt="Red rose bouquet">
+                <h2>Red rose bouquet</h2>
+                <p>35.000 IQD</p>
+                <a onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"><lord-icon
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+                    
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"><lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon>
+       </a> 
+            </div>
+            <div class="item">
+                <img src="../static/images/gardenia.white.jpeg" alt="White gardenia bouquet">
+                <h2>White gardenia bouquet</h2>
+                <p>15.000 IQD</p>
+                <a   onclick="addToCart(
+                        this.parentNode.querySelector('h2').innerText, 
+                        this.parentNode.querySelector('p').innerText, 
+                        this.parentNode.querySelector('img').src)"><lord-icon
+                      src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon></a> 
+
+            </div>
+            <div class="item">
+                <img src="../static/images/lilac.violet.jpeg" alt="Violet lilac bouquet">
+                <h2>Violet lilac bouquet</h2>
+                <p>25.000 IQD</p>
+                  <a   onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"><lord-icon
+                  
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+                    
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon></a> 
+            </div>
+            <div class="item">
+                <img src="../static/images/daisy.white.jpeg" alt="White daisy bouquet">
+                <h2>White daisy bouquet</h2>
+                <p>25.000 IQD</p> <a onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"><lord-icon
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+                    
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon></a> 
+            </div>
+            <div class="item">
+                <img src="../static/images/sun flower.jpeg" alt="Sun flower bouquet">
+                <h2>Sun flower bouquet</h2>
+                <p>25.000 IQD</p><a    onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"><lord-icon
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+                    
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon></a> 
+                
+            </div>
+            <div class="item">
+                <img src="../static/images/tulip.blue.jpeg" alt="Blue tulip bouquet">
+                <h2>Blue tulip bouquet</h2>
+                <p>25.000 IQD</p><a  onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"><lord-icon
+                   
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+                    
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon></a> 
+               
+            </div>
+            <div class="item">
+                <img src="../static/images/gypsophila.white.jpeg" alt="White gypsophila bouquet">
+                <h2>White gypsophila bouquet</h2>
+                <p>15.000 IQD</p>  <a  onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"><lord-icon
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+                    
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon></a> 
+               
+            </div>
+            <div class="item">
+                <img src="../static/images/peony.pink.jpeg" alt="Pink peony bouquet">
+                <h2>Pink peony bouquet</h2>
+                <p>35.000 IQD</p><a  onclick="addToCart(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src)"><lord-icon
+                   
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:35px;height:35px" class="car"> </lord-icon> </a>
+                    
+                 <a onclick="addToFav(
+                    this.parentNode.querySelector('h2').innerText, 
+                    this.parentNode.querySelector('p').innerText, 
+                    this.parentNode.querySelector('img').src, 
+                    this.querySelector('.heart'))"> <lord-icon
+           src="https://cdn.lordicon.com/xyboiuok.json"
+           trigger="hover"
+           style="width:35px;height: 35px" class="heart" >
+       </lord-icon></a> 
+                
+            </div>
+        </div>
+    </div>
+</div></center>
+
+
+
+<div class="scroll">
+  <i class="fas fa-arrow-left"></i>
+  <a href="col1" class="button1">1</a>  
+  <a href="col2" class="button2">2</a> 
+  <a href="col3" class="button3">3</a> 
+  <i class="fas fa-arrow-right"></i>
+</div>
+
+<footer>
+    <div class="footer-left">
+        <p>Our shop address <br> Arasat St. Karada, Baghdad, Iraq</p>
+    </div>
+    <div class="footer-right">
+        <div>
+            <img src="../static/images/feacbook.png" alt="Facebook">
+            <img src="../static/images/instagram.png" alt="Instagram">
+            <img src="../static/images/snapchat.png" alt="Snapchat">
+        </div>
+        <div class="email">
+            <img src="../static/images/gmail.png" alt="Gmail">
+            <span>florista@gmail.com</span>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../static/js/col1.js">
+
+</script>
+</body>
+</html>
+
+
+
+
+
+

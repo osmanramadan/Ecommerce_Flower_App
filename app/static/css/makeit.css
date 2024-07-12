@@ -1,0 +1,1527 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Cambria", Times, serif;
+}
+input:focus {
+background-color : #FFEBD8;
+}
+
+body {
+font-family: sans-serif;
+background-color: rgb(255, 255, 255);
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+header {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+z-index: 100;
+padding: 5px 0;
+}
+
+.container {
+max-width: 1000px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+.top-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+} 
+av ul li {
+display: inline-block; /* التأكد من عرض العناصر في صف واحد */
+padding: 15px 20px; /* إضافة بعض التباعد داخل العناصر */
+transition: border 0.3s ease; /* انتقال سلس للحدود */
+}
+
+
+.logo{
+text-decoration: none;
+color:#333;
+font-family: Caveat Brush;
+font-size: 45px;
+font-weight: 70;
+line-height: 70px;
+text-align: justified;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+nav li {
+margin: 0 20px;
+font-size: 22px;
+}
+
+nav a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+padding-bottom: 5px;
+transition: background-color 0.3s, box-shadow 0.3s;
+}
+nav ul li a:hover {
+background-color: #eeeeeeb4;
+border-radius: 12px;
+box-shadow: 0 5px 7px rgba(209, 206, 206, 0.767);
+border-bottom: 3px solid pink; /* إضافة حدود وردية عند تحريك المؤشر */
+
+}
+
+.icons img {
+width: 24px;
+height: 24px;
+margin-left: 20px;
+cursor: pointer;
+}
+
+
+footer {
+background-color: #FBA1B7;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left {
+text-align: left;
+}
+
+.footer-left p {
+color: white;
+}
+
+.footer-right {
+text-align: right;
+}
+
+.footer-right img {
+width: 30px;
+height: 30px;
+margin-left: 10px;
+}
+
+.basket-container {
+    position: relative;
+    display: inline-block;
+}
+.basket-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.footer-right .email {
+display: flex;
+align-items: center;
+margin-top: 10px;
+}
+
+.footer-right .email img {
+margin-right: 10px;
+}
+
+.footer-right .email span {
+color: white;
+}
+
+
+.main {
+width: 100%;
+min-height: 100vh;
+display: flex;
+background-color: #fff;
+}
+
+
+.bott{
+float: right;
+margin-left: 100px;
+margin-top: 100px;
+}
+.btn {
+padding-top: 50px;
+padding: 12px 25px;
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 15px;
+cursor: pointer;
+font-size: 18px;
+transition: background-color 0.3s;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.267); 
+}
+
+.btn:hover {
+transform: scale(1.1); /* تكبير الزر عند وضع المؤشر */
+}
+
+.active {
+background-color: #FBA1B7; /* لون الزر النشط */
+color: #000;
+}
+* نمط الزر الأساسي */
+.btn {
+background-color: #f8f6f7; /* لون خلفية الزر */
+color: #ffffff; /* لون النص */
+border: none;
+padding: 15px 30px; /* حشوة داخلية */
+font-size: 16px;
+border-radius: 25px; /* حواف دائرية */
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+text-decoration: none; /* إزالة التسطير للنص داخل الزر */
+display: inline-block;
+}
+
+/* التأثير عند التمرير فوق الزر */
+.btn:hover {
+background-color: #FBA1B7; /* لون الخلفية عند التمرير */
+transform: scale(1.05); /* تكبير الزر قليلاً */
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل للزر */
+}
+
+/* نمط الرابط داخل الزر */
+.btn a {
+color: inherit; /* يجعل لون النص هو نفسه لون النص للزر */
+text-decoration: none; /* إزالة التسطير للنص داخل الزر */
+}
+
+/* عند تفعيل الزر */
+.btn.active {
+background-color: #FBA1B7 /* لون الخلفية للزر النشط */
+}
+
+/* التأثير عند الضغط على الزر */
+.btn:active {
+background-color: #ff79d2; /* تغيير لون الخلفية عند الضغط */
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+transform: scale(0.98); /* تقليل حجم الزر قليلاً */
+}
+
+.inactive {
+background-color: #F8F6EC; /* لون الزر الغير نشط */
+}
+
+.line {
+width: 104%;
+height: 5px; /* يمكن تعديل الارتفاع حسب الرغبة */
+background-color: pink;
+margin: 0 auto; /* يجعل السطر في المنتصف تحت العنوان */
+margin-bottom: 900px;
+margin-left: 60px;
+}
+
+.cll {
+ margin-top: 200px;   
+background-color: #ffffff;
+margin: 0;
+padding: 0;
+text-align: center;
+margin-right: 30px;
+
+
+}
+.container2 {
+max-width: 1200px;
+
+text-align: center; /* To center the text within the container */
+
+}
+
+.container2 h1 {
+font-size: 36px;
+color: #333;
+text-align: center;
+margin-right: 900px;
+width: 100px;
+display: inline-block; /* يجعل الحدود تمتد فقط على طول النص وليس عرض الصفحة بأكمله */
+}
+.top-right-button{
+color: black;
+background-color:#E4ABBA;
+text-decoration: none;
+gap: 50px;
+font-weight: 400;
+font-size: 30px;
+display: inline-block;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+top: 40;
+right: 150px;
+margin-top: 12px;
+Padding: 6px 10px;
+text-align: center;
+}
+
+
+
+.text-container {
+
+align-items: center;
+}
+
+.text1 {
+
+color: #1b1b1b;
+font-size: 30px;
+text-decoration: none;
+position: absolute;
+left: 160px;
+top: 200px;
+Padding: 10px 0px ;
+width: 800px;
+padding-right: 1000px;
+margin-bottom: 100px;
+}
+.top3-right-button {
+
+width: 120px; 
+height: 40px;
+background-color: #FFFFFF; 
+border-radius: 5px;
+top: 350px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 160px;
+}
+
+.text1 span{
+display: flex;
+color: #000000;
+font-size: 30px;
+text-decoration: none;
+position: absolute;
+left: 112px;
+margin-top: -9px;
+Padding: 10px 0px ;
+width: 700px;
+height: 116px;
+gap: 100px;
+opacity: 0px; 
+word-spacing: 5px;
+}
+
+.top3-right-button {
+display: inline-block;
+width: 120px; 
+height: 60px;
+background-color: #FFFFFF; 
+border-radius: 5px;
+top: 330px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 160px;
+}
+
+.text-container1 {
+display: flex; 
+align-items: center;
+}
+
+.text2 {
+display: flex;
+color: #000000;
+font-size: 30px;
+text-decoration: none;
+position: absolute;
+left: 160px;
+top: 420px;
+Padding: 10px 0px ;
+width: 700px;
+height: 36px;
+gap: 100px;
+opacity: 0px; 
+word-spacing: 5px;
+}
+
+.text2 span{
+display: flex;
+color: #000000;
+font-size: 30px;
+text-decoration: none;
+position: absolute;
+left: 112px;
+margin-top: -7px;
+Padding: 10px 0px ;
+width: 700px;
+height: 36px;
+gap: 100px;
+opacity: 0px; 
+word-spacing: 5px;
+}
+
+
+
+.image-container {
+display: flex;
+flex-wrap: wrap; /* يسمح بتغليف الصور على عدة أسطر */
+justify-content: center; /* مركز الصور في الحاوية */
+margin: 50px 0; /* إضافة بعض المساحة العلوية والسفلية */
+margin-top: -600px;
+padding-left: 90px;
+}
+
+.image-box {
+position: relative; /* لضمان أن النص يمكن وضعه فوق الصورة */
+perspective: 1000px; /* يضيف تأثير العمق للعنصر */
+margin: 20px;
+text-align: center;
+
+}
+
+.image-box img {
+width: 105px;
+height: 105px;
+border-radius: 20px;
+transition: transform 0.6s;
+transform-style: preserve-3d; /* يحافظ على تأثير الثلاثي الأبعاد */
+}
+
+.image-box:hover img {
+transform: rotateY(180deg); /* دوران الصورة عند التمرير */
+background-color: #fcd2dc;
+}
+
+.image-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotateY(180deg); /* يضع النص في المركز ويدوره */
+font-size: 20px;
+color: #333;
+backface-visibility: hidden; /* يخفي النص عندما يكون الوجه الأمامي مرئي */
+transition: transform 0.6s; /* نفس مدة انتقال الصورة لضمان تزامن الحركة */
+}
+
+.image-box:hover .image-text {
+transform: translate(-50%, -50%) rotateY(0deg); /* يعيد النص إلى وضعه الطبيعي عند التمرير */
+}
+
+/* إضافة التأثير العكسي للصور */
+.image-box img {
+backface-visibility: hidden; /* يخفي الواجهة الخلفية عند التدوير */
+position: relative;
+}
+
+.image-box::after {
+content: attr(alt); /* يستخدم النص البديل للصورة */
+display: block;
+width: 105px;
+height: 105px;
+background-color: #ffe6f2; /* لون الخلفية الوردي الفاتح */
+border-radius: 20px;
+position: absolute;
+top: 0;
+left: 0;
+transform: rotateY(180deg);
+backface-visibility: hidden;
+text-align: center;
+line-height: 105px;
+color: #333;
+transition: transform 0.6s; 
+}
+
+
+
+
+.text-color {
+display: flex; 
+align-items: center;
+}
+
+.text-color {
+display: flex;
+color: #000000;
+font-size: 30px;
+text-decoration: none;
+position: absolute;
+left: 80px;
+top: 340px;
+Padding: 10px 0px ;
+width: 700;
+height: 36px;
+opacity: 0px; 
+word-spacing: 5px;
+font-family: "Cambria", Times, serif;
+}
+
+.text-color span{
+display: flex;
+color: #000000;
+font-size: 30px;
+text-decoration: none;
+position: absolute;
+left:110px;
+top:-10px;
+Padding: 10px 0px ;
+width: 700px;
+height: 36px;
+gap: 100px;
+opacity: 0px; 
+word-spacing: 5px;
+font-family: "Cambria", Times, serif;
+}
+
+
+.botton-box {
+margin-top: 5px;
+font-size: 20px;
+width: 700;
+}
+.botton-text {
+display: flex; 
+align-items: center;
+}
+.button1 {
+display: inline-block;
+width: 60px; 
+height: 60px;
+background-color: #A31C2F; 
+border-radius: 10px;
+top: 400px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 90px;
+}
+.button1:hover{
+background-color: rgb(196, 152, 152);
+transition: background-color 0.3s ease;
+}
+.button2 {
+display: inline-block;
+width: 60px; 
+height: 60px;
+background-color: #FFFFFF; 
+border-radius: 10px;
+top: 400px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 160px;
+}
+.button2:hover{
+background-color: rgb(196, 152, 152);
+transition: background-color 0.3s ease;
+}
+.button3 {
+display: inline-block;
+width: 60px; 
+height: 60px;
+background-color: #EB96B0; 
+border-radius: 10px;
+top: 400px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 230px;
+}
+.button3:hover{
+background-color: rgb(196, 152, 152);
+transition: background-color 0.3s ease;
+}
+.button4 {
+display: inline-block;
+width: 60px; 
+height: 60px;
+background-color: #3F80D6; 
+border-radius: 10px;
+top: 400px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 300px;
+}
+.button4:hover{
+background-color: rgb(196, 152, 152);
+transition: background-color 0.3s ease;
+}
+.button5 {
+display: inline-block;
+width: 60px; 
+height: 60px;
+background-color: #FFC738; 
+border-radius: 10px;
+top: 400px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 370px;
+}
+.button5:hover{
+background-color: rgb(196, 152, 152);
+transition: background-color 0.3s ease;
+}
+.button6 {
+display: inline-block;
+width: 60px; 
+height: 60px;
+background-color: #AE85C8; 
+border-radius: 10px;
+top: 400px;
+border: 1px solid #000000;
+border-radius: 20px;
+position: absolute;
+Padding: 6px 10px;
+text-align: center;
+left: 440px;
+}
+.button6:hover{
+background-color: rgb(196, 152, 152);
+transition: background-color 0.3s ease;
+}
+
+.button1-text {
+display: inline-block;
+width: 33px; 
+height: 24px;
+top: 455px;
+position: absolute;
+Padding: 6px 10px;
+left: 90px;
+font-family: "Cambria", Times, serif;
+font-size: 18px;
+}
+.button2-text {
+display: inline-block;
+width: 33px; 
+height: 24px;
+top: 455px;
+position: absolute;
+Padding: 6px 10px;
+left: 155px;
+font-family: "Cambria", Times, serif;
+font-size: 18px;
+}
+.button3-text {
+display: inline-block;
+width: 33px; 
+height: 24px;
+top: 455px;
+position: absolute;
+Padding: 6px 10px;
+left:230px;
+font-family: "Cambria", Times, serif;
+font-size: 18px;
+}
+.button4-text {
+display: inline-block;
+width: 33px; 
+height: 24px;
+top: 455px;
+position: absolute;
+Padding: 6px 10px;
+left:300px;
+font-family: "Cambria", Times, serif;
+font-size: 18px;
+}
+.button5-text {
+display: inline-block;
+width: 33px; 
+height: 24px;
+top: 455px;
+position: absolute;
+Padding: 6px 10px;
+left: 364px;
+font-family: "Cambria", Times, serif;
+font-size: 18px;
+}
+.button6-text {
+display: inline-block;
+width: 33px; 
+height: 24px;
+top: 455px;
+position: absolute;
+Padding: 6px 10px;
+left: 438px;
+font-family: "Cambria", Times, serif;
+font-size: 18px;
+}
+
+
+.text-container2 {
+display: flex; 
+align-items: center;
+}
+
+.text3 {
+    display: flex;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    left: 160px;
+    top: 850px;
+    Padding: 10px 0px ;
+    width: 700px;
+    height: 36px;
+    gap: 100px;
+    opacity: 0px; 
+    word-spacing: 5px;
+}
+
+.text3 span{
+    display: flex;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    left: 120px;
+    margin-top: -6px;
+    Padding: 10px 0px ;
+    width: 700px;
+    height: 36px;
+    gap: 100px;
+    opacity: 0px; 
+    word-spacing: 5px;
+}
+
+
+.image-container1 {
+display: flex;
+left: 150px;
+}
+
+.image-box1 {
+text-align: center;
+margin: 10px;
+margin-left: 100px;
+margin-top: 0px;
+
+}
+
+.image-box1 img {
+width: 100px; 
+height: 100px;
+margin-top: 240px; 
+width: 120px;
+height: 120px;
+border-radius: 20px;
+border: 2px solid #ada8a8;
+box-shadow: #333;
+}
+
+.image-text1 {
+margin-top: 5px;
+font-size: 20px;
+width: 700;
+}
+
+
+.text-color1 {
+display: flex; 
+align-items: center;
+}
+
+.text-color1 {
+    display: flex;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    left: 80px;
+    top: 545px;
+    Padding: 10px 0px ;
+    width: 700;
+    height: 36px;
+    opacity: 0px; 
+    word-spacing: 5px;
+    font-family: "Cambria", Times, serif;
+}
+
+.text-color1 span{
+    display: flex;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    left:118px;
+    top:-8px;
+    Padding: 10px 0px ;
+    width: 700px;
+    height: 36px;
+    gap: 100px;
+    opacity: 0px; 
+    word-spacing: 5px;
+    font-family: "Cambria", Times, serif;
+}
+
+
+.botton-box {
+    margin-top: 5px;
+    font-size: 20px;
+    width: 700;
+  }
+  .botton-text {
+    display: flex; 
+    align-items: center;
+  }
+.button11 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #C69B7B; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 90px;
+}
+.button11:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button21 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #000000; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 160px;
+}
+.button21:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button31 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #84D09E; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 230px;
+}
+.button31:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button41 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #605A5A; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 300px;
+}
+.button41:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button51 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #A31C2F; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 370px;
+}
+.button51:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button61 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #FFFFFF; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 440px;
+}
+.button61:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button71 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #EB96B0; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 510px;
+}
+.button71:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button81 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #3F80D6; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 580px;
+}
+.button81:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button91 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #FFC738; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 650px;
+}
+.button91:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+.button101 {
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    background-color: #AE85C8; 
+    border-radius: 10px;
+    top: 590px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    Padding: 6px 10px;
+    text-align: center;
+    left: 720px;
+}
+.button101:hover{
+    background-color: rgb(196, 152, 152);
+    transition: background-color 0.3s ease;
+}
+
+.button11-text {
+    display: inline-block;
+    width: 700; 
+    height: 24px;
+    top: 645px;
+    left: 82px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button21-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left: 155px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button31-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left:230px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button41-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left:300px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button51-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left: 372px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button61-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left: 438px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button71-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left: 510px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button81-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left: 578px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button91-text {
+    display: inline-block;
+    width: 33px; 
+    height: 24px;
+    top: 645px;
+    left: 650px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+.button101-text {
+    display: inline-block;
+    width: 58px; 
+    height: 24px;
+    top: 645px;
+    left: 718px;
+    position: absolute;
+    Padding: 6px 10px;
+    font-family: "Cambria", Times, serif;
+    font-size: 18px;
+}
+
+
+.text-color2 {
+    display: flex; 
+    align-items: center;
+    }
+    
+    .text-color2 {
+        display: flex;
+        color: #000000;
+        font-size: 30px;
+        text-decoration: none;
+        position: absolute;
+        left: 80px;
+        top: 615px;
+        Padding: 10px 0px ;
+        width: 700;
+        height: 36px;
+        opacity: 0px; 
+        word-spacing: 5px;
+        font-family: "Cambria", Times, serif;
+    }
+    
+    .text-color2 span{
+        display: flex;
+        color: #000000;
+        font-size: 30px;
+        text-decoration: none;
+        position: absolute;
+        left:98px;
+        top:-6px;
+        Padding: 10px 0px ;
+        width: 700px;
+        height: 36px;
+        gap: 100px;
+        opacity: 0px; 
+        word-spacing: 5px;
+        font-family: "Cambria", Times, serif;
+    }
+
+
+    .botton-box {
+        margin-top: 5px;
+        font-size: 20px;
+        width: 700;
+      }
+      .botton-text {
+        display: flex; 
+        align-items: center;
+      }
+    .button12 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #C69B7B; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 90px;
+    }
+    .button12:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button22 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #000000; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 160px;
+    }
+    .button22:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button32 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #84D09E; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 230px;
+    }
+    .button32:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button42 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #605A5A; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 300px;
+    }
+    .button42:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button52 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #A31C2F; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 370px;
+    }
+    .button52:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .basket-container {
+    position: relative;
+    display: inline-block;
+}
+.basket-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+    .button62 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #FFFFFF; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 440px;
+    }
+    .button62:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button72 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #EB96B0; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 510px;
+    }
+    .button72:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button82 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #3F80D6; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 580px;
+    }
+    .button82:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button92 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #FFC738; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 650px;
+    }
+    .button92:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+    .button102 {
+        display: inline-block;
+        width: 60px; 
+        height: 60px;
+        background-color: #AE85C8; 
+        border-radius: 10px;
+        top: 660px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        position: absolute;
+        Padding: 6px 10px;
+        text-align: center;
+        left: 720px;
+    }
+    .button102:hover{
+        background-color: rgb(196, 152, 152);
+        transition: background-color 0.3s ease;
+    }
+
+    .button12-text {
+        display: inline-block;
+        width: 700; 
+        height: 24px;
+        top: 715px;
+        left: 82px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button22-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left: 155px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button32-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left:230px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button42-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left:300px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button52-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left: 372px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button62-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left: 438px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button72-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left: 510px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button82-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left: 578px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button92-text {
+        display: inline-block;
+        width: 33px; 
+        height: 24px;
+        top: 715px;
+        left: 650px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+    .button102-text {
+        display: inline-block;
+        width: 58px; 
+        height: 24px;
+        top: 715px;
+        left: 718px;
+        position: absolute;
+        Padding: 6px 10px;
+        font-family: "Cambria", Times, serif;
+        font-size: 18px;
+    }
+
+    .text-message {
+        display: flex;
+        color: #000000;
+        font-size: 30px;
+        text-decoration: none;
+        position: absolute;
+        left: 160px;
+        top: 1380px;
+        Padding: 10px 0px ;
+        width: 700;
+        height: 36px;
+        opacity: 0px; 
+        word-spacing: 5px;
+        font-family: "Cambria", Times, serif;
+    }
+    .text-message span{
+        display: flex;
+        color: #000000;
+        font-size: 30px;
+        text-decoration: none;
+        position: absolute;
+        left: 65px;
+        top: -.5px;
+        Padding: 10px 0px ;
+        width: 700;
+        height: 36px;
+        opacity: 0px; 
+        word-spacing: 5px;
+        font-family: "Cambria", Times, serif;
+    }
+
+    .b1 {
+        padding: 10px; 
+      }
+      
+      input[type="text"] {
+        width: 700; 
+        height: 150px;
+        padding: 5px; 
+        border: 1px solid black; 
+        margin-top:350px;
+        text-align: left;
+        align-items: flex-start;
+        font-size: 20px;
+        border-radius: 20px;
+        Padding: 12px 6px;
+        justify-content: flex-start;
+        text-align: center;
+      }
+      
+      
+      .b2 {
+        width: 290px;
+        height: 60px;
+        color: #333;
+        background-color: #fae7ec;
+        font-weight: 700;
+        font-size: 30px;
+        display: inline-block;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        margin: 100px auto; /* Center the button horizontally */
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Hover effect for the button */
+    .b2:hover {
+        background-color: #fba1b7;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+
+    

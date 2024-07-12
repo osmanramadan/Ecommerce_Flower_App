@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cambria", Times, serif;
+}
+
+input:focus {
+    background-color: #FFEBD8;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} 
+
+.logo {
+    text-decoration: none;
+    color: #333;
+    font-family: Caveat Brush;
+    font-size: 45px;
+    font-weight: 70;
+    line-height: 70px;
+    text-align: justified;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+    font-size: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #eeeeeeb4;
+    border-radius: 12px;
+    box-shadow: 0 5px 7px rgba(209, 206, 206, 0.767);
+    border-bottom: 3px solid pink;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#search-section {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 100px;
+}
+
+#search-section.active {
+    display: flex;
+}
+
+.search-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    background-color: #ffebd8;
+    outline: none;
+}
+
+.basket-container {
+    position: relative;
+    display: inline-block;
+}
+
+.basket-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 150;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+footer {
+    background-color: #fba1b7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-left p {
+    color: white;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.footer-right .social-icons {
+    display: flex;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.footer-right .social-icons img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.footer-right .email {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right .email img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-right .email span {
+    color: white;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: 65px;
+    color: #333333;
+}
+
+.line {
+    width: 90%;
+    height: 5px;
+    background-color: #FBA1B7;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}

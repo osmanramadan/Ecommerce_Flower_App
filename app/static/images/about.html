@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link css-->
+    <link rel="stylesheet" href="styleabout.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9324/9324616.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>About</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="top-row">
+                <a href="#" class="logo">florista</a>
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="#">Sections</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <lord-icon src="https://cdn.lordicon.com/mfmkufkr.json" trigger="hover" style="width:35px;height:35px"></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/xyboiuok.json" trigger="hover" style="width:35px;height:35px"></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/kkvxgpti.json" trigger="hover" style="width:35px;height:35px" id="search-icon"></lord-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cll">
+            <div class="container2">
+                <h1>About Us</h1>
+                <div class="line"></div> <!-- السطر تحت العنوان -->
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="content">
+                <div class="text1">
+                    <div class="tx1">Welcome to our floral haven, where beauty flowers and dreams take flight.</div>
+                    <div class="tx2">At Florista, our passion for flowers is deeply rooted in a love for nature's beauty and the joy it brings to people's lives.</div>
+                    <div class="tx3">Founded with a vision to spread happiness through exquisite floral arrangements, we are dedicated to providing our customers with the highest quality flowers and personalized service.</div>
+                </div>
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://dobrynow.pl/wp-content/uploads/2022/02/lokale_21-0ocwstgs.jpg" alt="Front Image">
+                        </div>
+                        <div class="back">
+                            <img src="https://img.freepik.com/free-photo/pretty-florist-preparing-bouquet_23-2147742984.jpg" alt="Back Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Our shop address <br> Arasat St. Karada, Baghdad, Iraq</p>
+        </div>
+        <div class="footer-right">
+            <div>
+                <img src="feacbook.png" alt="Facebook">
+                <img src="instagram.png" alt="Instagram">
+                <img src="snapchat.png" alt="Snapchat">
+            </div>
+            <div class="email">
+                <img src="gmail.png" alt="Gmail">
+                <span>florista@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchIcon = document.getElementById('search-icon');
+            searchIcon.addEventListener('click', () => {
+                const searchBarContainer = document.getElementById('search-bar-container');
+                if (searchBarContainer) {
+                    searchBarContainer.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
